@@ -1,0 +1,12 @@
+#Week 2
+#Recurrent Neural Network
+
+
+#Medical Deep Learning #Assignment 1
+#2019710515 융합의과학과 박수빈
+
+Q1. What happens to the gradient if you backpropagate through a long sequence?
+In an RNN trained on long sequences the gradients can easily explode or vanish. But We can avoid this by initializing the weights very carefully.
+
+Q2. What happens if you increase the number of hidden layers in the RNN model?
+Performance improves when the hidden layer is increased to the appropriate line. But further addition of hidden layers can actually harm the model's performance.
