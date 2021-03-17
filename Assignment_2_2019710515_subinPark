@@ -1,0 +1,11 @@
+#Week 3
+#Modern RNN
+
+#Medical Deep Learning #Assignment 2
+#2019710515 융합의과학과 박수빈
+
+Q1. What happens if you implement only parts of a GRU, e.g., with only a reset gate or only an update gate?
+  If reset, you will have long-term dependencies, and if update, short-term dependencies short-term.
+ 
+Q2. Compare the computational cost for GRUs, LSTMs, and regular RNNs for a given hidden dimension. Pay special attention to the training and inference cost.
+  LSTM > GRU > RNN
