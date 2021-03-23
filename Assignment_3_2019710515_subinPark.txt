@@ -1,0 +1,9 @@
+
+
+Q1. Can you design a learnable positional encoding method?
+ Positional encoding can be either learned or fixed. 
+ It is initialized with a normal distribution that follows an average of 0, standard deviation of 0.1, and expects to learn position information through learning.
+Q2. What can be challenges to Transformers if input sequences are very long? Why?
+ Transformer, there is no concept of the time step; the input sequence can be passed into the Encoder in parallel. 
+ These advantages however came with a high cost, 
+ as transformer-based networks’ memory and computational requirements grow quadratically with sequence length, resulting in major efficiency bottlenecks when dealing with long sequences.
