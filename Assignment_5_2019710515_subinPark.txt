@@ -1,0 +1,31 @@
+
+#Week 6
+#optimization algorithm
+
+
+#Medical Deep Learning #Assignment 5
+#2019710515 융합의과학과 박수빈
+
+Q1. Assume that you want to balance a (real) ball on a (real) saddle
+-	Why is this hard?
+-	Can you exploit this effect also for optimization algorithms?
+
+-	It's not easy to put the ball on the actual saddle.
+As long as the ball doesn't go into a hole or something, it's not easy to balance.
+But the saddle is flat, so it's not easy to balance, and it just rolls over and falls to the floor. 
+-	At the saddle point, all gradients of the function vanishing, but not global or local minima.
+Also, because gradient is gone, it is not easy to learn.
+Alternatively, the value is not fixed because it is not convex, and the value drops rapidly to infinity (like falling from the real saddle to the floor).
+If you use the momentum method, you can escape the area with Velocity even if you get caught in the local minimum or saddle point. In addition, if updates are made frequently in a particular direction, the velocity is formed in that direction, so even if you go back and forth in zigzag, the velocity allows you to move forward and offset the zigzag as shown in the lower right picture.
+
+Q2. What changes when we perform SGD with momentum? What happens when we use minibatch SGD with momentum?
+Add momentum to Gradient Descent
+
+Remember the past moving way, reflect it.
+GD ends when 𝛻𝑓_𝑖 (𝑥)=0, but Momentum can training continue
+High probability of search the global minimum by escaping from the local minimum
+Usually works better at a value of 0.9
+Usually almost always faster than GD
+
+Mini-batch, as stated , is to update parameters based on a small batch of gradients instead of each item.
+In addition to the advantages of using momentum in the mini-batch SGD, if the data value within the mini-batch has an outlier value, the value can be prevented from going in too far.
