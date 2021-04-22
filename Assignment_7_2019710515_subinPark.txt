@@ -1,0 +1,13 @@
+#Week 8
+#Computer Vision
+
+#Medical Deep Learning #Assignment 7
+#2019710515 융합의과학과 박수빈
+
+Q1. Is it efficient to use matrix multiplication to implement convolution operations? Why? 
+Implementation as Matrix Multiplication. Note that the convolution operation essentially performs dot products between the filters and local regions of the input. 
+A common implementation pattern of the CONV layer is to take advantage of this fact and formulate the forward pass of a convolutional layer as one big matrix multiply as follows
+1.	This allows convolutions to utilize fast, highly-optimized matrix multiplication libraries.
+2.	The advantage of this representation (and computation) is that back-propagation can be computed more easily by just transposing 
+3.	it’s possible to have the matrix-vector multiply be an operator that increases the dimension of the output.
+4.	having an efficient implementation suitable for running on a GPU
