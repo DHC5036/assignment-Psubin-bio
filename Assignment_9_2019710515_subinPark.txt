@@ -1,0 +1,20 @@
+#Week 10
+# Natural Language Processing
+
+#Medical Deep Learning #Assignment 9
+#2019710515 융합의과학과 박수빈
+
+Q1. Why does BERT succeed?
+1.	BERT embeddings work reasonably well for many tasks in NLP. There are some success stories in IR and CV. It is not a hammer to use for any ML problem.
+2.	BERT embeddings are able to learn some generic NLP signals, thanks to
+  2-1.	enabling a bidirectional flow of information —- no more reliance on only the words to the left of a word (left context) like GPT-1 or shallow concatenation of the left and the right context like ELMo,
+  2-2.	having a huge parameter budget —- 340M is not a small investment,
+  2-3.	utilizing large amounts of data —- 3300M words, and
+  2-4.	advent of huge compute —- TPUs.
+3.	One of the least appreciated fact about BERT is that it was the first work in NLP to convincingly show that scaling the parameter budget (from small to large model sizes) leads to large improvements on tasks with very small datasets (where many thought that the max. performance has already been achieved)
+4.	Importantly, BERT has been criticized recently for relying on spurious signals (not the right signals we think a model should pick up on) to solve some NLP tasks like Natural Language Inference. Like any other ML model, BERT model shouldn’t be applied blindly to a task. 
+
+Q2. Can we leverage BERT in clinical natural language processing? 
+YES.
+Clinical natural language consists of most of the words technical terms. Also, since Korean and English are mixed, it may be difficult to use BERT, but can.
+Recently, a lot of research using BERT has been conducted in Korea, and many research results and papers have been published. The recently developed BERT and its WordPiece tokenization are effective for the Korean clinical entity recognition”
