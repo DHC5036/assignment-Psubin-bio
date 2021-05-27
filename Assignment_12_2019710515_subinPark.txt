@@ -2,7 +2,7 @@
 #Week 13
 # Generative Adversarial Network
 
-#Medical Deep Learning #Assignment 11
+#Medical Deep Learning #Assignment 12
 #2019710515 융합의과학과 박수빈
 
 
